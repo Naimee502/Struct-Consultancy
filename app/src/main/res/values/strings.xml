@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Struct</string>
+
+
+    <string name="project_name">Project Name</string>
+    <string name="free_struct_consultancy">Free Struct Consultancy</string>
+    <string name="explain_yr_project">Explain Your Project</string>
+    <string name="explain_yr_question">Explain Your Question</string>
+    <string name="attachment">Attachment</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="send">Send</string>
+
+
+    <string name="quote_your_project">Quote your project</string>
+    <string name="project_reqired_design_codes">Project Reqired Design Codes :</string>
+    <string name="other_details">Other Details</string>
+    <string name="quote_attachement">One Cad File Only (2010) /Photo Take a Photo</string>
+
+    <string name="power_by_struct_international">Powered by STRUCT International</string>
+
+
+    <string name="free_struct_consultancy_desc">Completely free chat with our Engineer, Explain your question</string>
+    <string name="struct_consultancy">Struct Consultancy</string>
+
+    <string name="services">Services</string>
+    <string name="services_desc">DESIGN(RC, Steel,Composite, Infra), MODELING(RC, Steel,Composite, rebar detailing BBS)</string>
+
+    <string name="available_codes_of_design">Available codes of design</string>
+    <string name="available_codes_of_design_desc">Reinforced concrete, Steel hot rolled, Steel cold formed \u0027 Aluminum</string>
+
+    <string name="available_codes_of_loading">Available codes of loading</string>
+    <string name="available_codes_of_loading_desc">Snow, Wind, Seismic (Earth quake)</string>
+    <string name="struct">Struct</string>
+
+
+</resources>

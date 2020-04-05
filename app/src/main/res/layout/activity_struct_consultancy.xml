@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.StructConsultancyActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/header_view_rel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_56"
+        app:cardElevation="@dimen/margin_10">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_56"
+            android:elevation="@dimen/margin_10">
+
+            <TextView
+                android:id="@+id/header_txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/back_rel"
+                android:text="@string/struct_consultancy"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/text_18"
+                android:textColor="@color/black"
+                android:paddingLeft="@dimen/margin_10"/>
+
+            <RelativeLayout
+                android:id="@+id/back_rel"
+                android:layout_width="@dimen/margin_50"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="@dimen/margin_18"
+                    android:layout_height="@dimen/margin_18"
+                    android:src="@drawable/ic_back"
+                    android:clickable="false"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/powered_by_consultancy"
+        android:layout_below="@+id/header_view_rel"
+        android:paddingLeft="@dimen/margin_10"
+        android:paddingRight="@dimen/margin_10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/services_rel"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_80"
+                    android:elevation="@dimen/margin_5"
+                    android:background="@color/white"
+                    android:layout_marginTop="@dimen/margin_40"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginRight="@dimen/margin_10">
+
+                    <TextView
+                        android:id="@+id/services_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:gravity="center_horizontal"
+                        android:textSize="@dimen/text_16"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:text="@string/services"/>
+
+                    <TextView
+                        android:id="@+id/services_desc_txt"
+                        android:layout_below="@+id/services_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/gray"
+                        android:gravity="center_horizontal"
+                        android:textSize="@dimen/text_14"
+                        android:paddingLeft="@dimen/margin_5"
+                        android:paddingRight="@dimen/margin_5"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:text="@string/services_desc"/>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/available_codes_of_design_rel"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_80"
+                    android:elevation="@dimen/margin_5"
+                    android:background="@color/white"
+                    android:layout_below="@+id/services_rel"
+                    android:layout_marginTop="@dimen/margin_40"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginRight="@dimen/margin_10">
+
+                    <TextView
+                        android:id="@+id/available_codes_of_design_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:gravity="center_horizontal"
+                        android:textSize="@dimen/text_16"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:text="@string/available_codes_of_design"/>
+
+                    <TextView
+                        android:id="@+id/available_codes_of_design_desc_txt"
+                        android:layout_below="@+id/available_codes_of_design_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/gray"
+                        android:gravity="center_horizontal"
+                        android:textSize="@dimen/text_14"
+                        android:paddingLeft="@dimen/margin_5"
+                        android:paddingRight="@dimen/margin_5"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:text="@string/available_codes_of_design_desc"/>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/available_codes_of_loading_rel"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_80"
+                    android:elevation="@dimen/margin_5"
+                    android:background="@color/white"
+                    android:layout_below="@+id/available_codes_of_design_rel"
+                    android:layout_marginTop="@dimen/margin_40"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginRight="@dimen/margin_10">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+
+                        <TextView
+                            android:id="@+id/available_codes_of_loading_txt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:gravity="center_horizontal"
+                            android:textSize="@dimen/text_16"
+                            android:text="@string/available_codes_of_loading"/>
+
+                        <TextView
+                            android:id="@+id/available_codes_of_loading_desc_txt"
+                            android:layout_below="@+id/available_codes_of_loading_txt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/gray"
+                            android:gravity="center_horizontal"
+                            android:textSize="@dimen/text_14"
+                            android:paddingLeft="@dimen/margin_5"
+                            android:paddingRight="@dimen/margin_5"
+                            android:layout_marginTop="@dimen/margin_5"
+                            android:text="@string/available_codes_of_loading_desc"/>
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/quote_your_project_rel"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_80"
+                    android:elevation="@dimen/margin_5"
+                    android:background="@color/white"
+                    android:layout_marginTop="@dimen/margin_40"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:layout_marginBottom="@dimen/margin_10"
+                    android:layout_below="@+id/available_codes_of_loading_rel">
+
+                    <TextView
+                        android:id="@+id/quote_your_project"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:textSize="@dimen/text_16"
+                        android:text="@string/quote_your_project"/>
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <TextView
+        android:id="@+id/powered_by_consultancy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/text_12"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/margin_5"
+        android:text="@string/power_by_struct_international"/>
+
+</RelativeLayout>

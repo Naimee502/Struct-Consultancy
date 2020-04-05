@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="country_name">
+        <item>COUNTRY</item>
+        <item>ARGENTINA</item>
+        <item>AUSTRALIA</item>
+        <item>BELGIUM</item>
+        <item>BOLIVIA</item>
+        <item>BRAZIL</item>
+        <item>BULGARIA</item>
+        <item>CANADA</item>
+        <item>CHILE</item>
+        <item>COLOMBIA</item>
+        <item>EU- INTERNATIONAL</item>
+        <item>FRANCE</item>
+        <item>GERMANY</item>
+        <item>INDIA</item>
+        <item>ITALY</item>
+        <item>MEXICO</item>
+        <item>NEW ZEALAND</item>
+        <item>PERU</item>
+        <item>PORTUGAL</item>
+        <item>ROMANIA</item>
+        <item>RUSSIAN FEDERATION</item>
+        <item>SOUTH AFRICA</item>
+        <item>SPAIN</item>
+        <item>TURKEY</item>
+        <item>UNITED KINGDOM</item>
+        <item>USA</item>
+    </string-array>
+
+    <string-array name="stories_name">
+        <item>STORIES</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+    <string-array name="basements_name">
+        <item>BASEMENTS</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+
+    <string-array name="material_name">
+        <item>MATERIAL</item>
+        <item>R.C.C.</item>
+        <item>STEELS</item>
+        <item>PRECAST</item>
+        <item>POST-TENSION</item>
+        <item>PRE-TENSION</item>
+        <item>PRE-STRESSED</item>
+        <item>STEEL HOT ROLLED</item>
+        <item>STEEL COLD FORMED</item>
+        <item>P.E.B.</item>
+        <item>ALUMINUM</item>
+        <item>OTHER</item>
+    </string-array>
+
+
+</resources>

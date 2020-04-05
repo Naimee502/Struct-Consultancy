@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.FreeStructConsultancyActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/header_view_rel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_56"
+        app:cardElevation="@dimen/margin_10">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_56"
+            android:elevation="@dimen/margin_10">
+
+            <TextView
+                android:id="@+id/header_txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/back_rel"
+                android:text="@string/free_struct_consultancy"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/text_18"
+                android:textColor="@color/black"
+                android:paddingLeft="@dimen/margin_10"/>
+
+            <RelativeLayout
+                android:id="@+id/back_rel"
+                android:layout_width="@dimen/margin_50"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="@dimen/margin_18"
+                    android:layout_height="@dimen/margin_18"
+                    android:src="@drawable/ic_back"
+                    android:clickable="false"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header_view_rel"
+            android:layout_above="@+id/send_rv"
+        android:paddingBottom="@dimen/margin_15"
+            android:paddingTop="@dimen/margin_15"
+            android:paddingLeft="@dimen/margin_15"
+            android:paddingRight="@dimen/margin_15">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.9"
+                        android:layout_marginRight="@dimen/margin_10">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/project_name_tl"
+                            style="@style/OutlineTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:errorEnabled="true">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/project_name_et"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/margin_50"
+                                android:imeOptions="actionNext"
+                                android:inputType="text"
+                                android:textColorHint="@color/black"
+                                android:hint="@string/project_name"
+                                android:singleLine="true"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_14" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.1"
+                        android:layout_marginLeft="@dimen/margin_10">
+
+                        <RelativeLayout
+                            android:id="@+id/country_rel"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/margin_47"
+                            android:layout_marginTop="@dimen/margin_5"
+                            android:background="@drawable/rectangle_with_radius">
+
+                            <Spinner
+                                android:id="@+id/country_sp"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/margin_45"
+                                android:singleLine="true"
+                                android:layout_margin="@dimen/margin_4"/>
+
+                        </RelativeLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/country_tl"
+                            style="@style/OutlineTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:errorEnabled="true"
+                            android:layout_below="@+id/country_rel"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/margin_5">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:layout_marginRight="@dimen/margin_10">
+
+                        <RelativeLayout
+                            android:id="@+id/stories_rel"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/margin_47"
+                            android:layout_marginTop="@dimen/margin_5"
+                            android:background="@drawable/rectangle_with_radius">
+
+                            <Spinner
+                                android:id="@+id/stories_sp"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/margin_45"
+                                android:singleLine="true"
+                                android:layout_margin="@dimen/margin_4"/>
+
+                        </RelativeLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/stories_tl"
+                            style="@style/OutlineTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:errorEnabled="true"
+                            android:layout_below="@+id/stories_rel"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.3"
+                        android:layout_marginLeft="@dimen/margin_10">
+
+                        <RelativeLayout
+                            android:id="@+id/basements_rel"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/margin_47"
+                            android:layout_marginTop="@dimen/margin_5"
+                            android:background="@drawable/rectangle_with_radius">
+
+                            <Spinner
+                                android:id="@+id/basements_sp"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/margin_45"
+                                android:singleLine="true"
+                                android:layout_margin="@dimen/margin_4"/>
+
+                        </RelativeLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/basements_tl"
+                            style="@style/OutlineTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:errorEnabled="true"
+                            android:layout_below="@+id/basements_rel"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/margin_5">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.9"
+                        android:layout_marginRight="@dimen/margin_10">
+
+                        <RelativeLayout
+                            android:id="@+id/material_rel"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/margin_47"
+                            android:layout_marginTop="@dimen/margin_5"
+                            android:background="@drawable/rectangle_with_radius">
+
+                            <Spinner
+                                android:id="@+id/material_sp"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/margin_45"
+                                android:singleLine="true"
+                                android:layout_margin="@dimen/margin_4"/>
+
+                        </RelativeLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/material_tl"
+                            style="@style/OutlineTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:errorEnabled="true"
+                            android:layout_below="@+id/material_rel"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.1"
+                        android:layout_marginLeft="@dimen/margin_10">
+
+                        <RelativeLayout
+                            android:id="@+id/material_country_rel"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/margin_47"
+                            android:layout_marginTop="@dimen/margin_5"
+                            android:background="@drawable/rectangle_with_radius">
+
+                            <Spinner
+                                android:id="@+id/material_country_sp"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/margin_45"
+                                android:singleLine="true"
+                                android:layout_margin="@dimen/margin_4"/>
+
+                        </RelativeLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/material_country_tl"
+                            style="@style/OutlineTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:errorEnabled="true"
+                            android:layout_below="@+id/material_country_rel"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/explain_yr_project_tl"
+                        style="@style/OutlineTheme"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:errorEnabled="true">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/explain_yr_project_tl_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/margin_100"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:gravity="top"
+                            android:textColorHint="@color/black"
+                            android:hint="@string/explain_yr_project"
+                            android:singleLine="false"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_14" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/explain_yr_question_tl"
+                        style="@style/OutlineTheme"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:errorEnabled="true">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/explain_yr_question_tl_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/margin_100"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:gravity="top"
+                            android:textColorHint="@color/black"
+                            android:hint="@string/explain_yr_question"
+                            android:singleLine="false"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_14" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/attachement_tl"
+                        style="@style/OutlineTheme"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:errorEnabled="true">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/attachement_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/margin_50"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:gravity="top"
+                            android:clickable="false"
+                            android:textColorHint="@color/black"
+                            android:hint="@string/attachment"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_14" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/name_tl"
+                        style="@style/OutlineTheme"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:errorEnabled="true">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/name_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/margin_50"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:gravity="top"
+                            android:clickable="false"
+                            android:textColorHint="@color/black"
+                            android:hint="@string/name"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_14" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/email_tl"
+                        style="@style/OutlineTheme"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:errorEnabled="true">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/email_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/margin_50"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:gravity="top"
+                            android:clickable="false"
+                            android:textColorHint="@color/black"
+                            android:hint="@string/email"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_14" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/send_rv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardElevation="@dimen/margin_2"
+        android:layout_marginBottom="@dimen/margin_20"
+        app:cardCornerRadius="@dimen/margin_5"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/margin_15"
+        android:layout_marginRight="@dimen/margin_15">
+
+        <TextView
+            android:id="@+id/send_txt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/send"
+            android:background="?selectableItemBackground"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_16"
+            android:gravity="center" />
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
